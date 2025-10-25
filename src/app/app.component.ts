@@ -16,7 +16,7 @@ import { ProdutoModel } from '../model/produto.model';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'catalogo-produtos-somente-front';
+  title = 'Catálogo de Produtos - GHSX Store';
 
   produtos: ProdutoModel[] = [
     {
@@ -135,8 +135,22 @@ export class AppComponent {
     },
   ];
 
+  constructor() {
+    window.document.title = this.title;
+  }
+
+  abrirWhatsapp() {
+    const nomeURL = encodeURIComponent('Olá, gostaria de ajudar com alguns produtos!');
+    window.open(`https://wa.me/558296293198?text=${nomeURL}`, '_blank');
+  }
+
+  abrirInstagram() {
+    const url = 'https://www.instagram.com/ghsx.store/';
+    window.open(url, '_blank');
+  }
+
   comprarProduto(produto: ProdutoModel) {
-    const nomeTemp = 'Olá, tenho interesse no produto: ' + produto.nome;
+    const nomeTemp = 'Olá, tenho interesse no produto: ' + produto.nome + ' - R$ ' + produto.preco;
     const nomeURL = encodeURIComponent(nomeTemp);
     window.open(`https://wa.me/558296293198?text=${nomeURL}`, '_blank');
   }

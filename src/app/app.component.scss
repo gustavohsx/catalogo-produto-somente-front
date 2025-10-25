@@ -152,3 +152,106 @@ button:hover {
     font-size: 0.9rem;
   }
 }
+
+
+/* ======= HEADER ======= */
+.header {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-image: url('../assets/wallpaper-ghsx-store-simples.png'); /* coloque aqui o caminho do seu wallpaper */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 250px;
+  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6));
+  margin-bottom: 20px;
+}
+
+/* ======= REDES SOCIAIS ======= */
+.redes-sociais {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-rede {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #000;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.btn-rede:hover {
+  transform: scale(1.1);
+}
+
+/* Botões individuais */
+.btn-rede.whatsapp {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: #fff;
+}
+
+.btn-rede.whatsapp:hover {
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.8);
+}
+
+.btn-rede.instagram {
+  background: linear-gradient(135deg, #feda75, #d62976, #962fbf, #4f5bd5);
+  color: #fff;
+}
+
+.btn-rede.instagram:hover {
+  box-shadow: 0 0 20px rgba(245, 96, 64, 0.8);
+}
+
+/* ======= RESPONSIVIDADE HEADER ======= */
+@media (max-width: 768px) {
+  .header {
+    height: 200px;
+  }
+
+  .logo {
+    max-width: 180px;
+  }
+
+  .btn-rede {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 180px;
+  }
+
+  .logo {
+    max-width: 150px;
+  }
+}
+

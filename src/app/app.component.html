@@ -1,4 +1,16 @@
 <div class="container">
+  <header class="header">
+    <div class="overlay">
+      <div class="redes-sociais">
+        <button class="btn-rede whatsapp" (click)="abrirWhatsapp()">
+          <i class="fab fa-whatsapp"></i>
+        </button>
+        <button class="btn-rede instagram" (click)="abrirInstagram()">
+          <i class="fab fa-instagram"></i>
+        </button>
+      </div>
+    </div>
+  </header>
   <p class="titulo">Produtos</p>
   <div class="lista-produtos">
     <div *ngFor="let produto of produtos" class="card-produto">
@@ -12,4 +24,16 @@
       </button>
     </div>
   </div>
+  <footer class="header">
+    <div class="overlay">
+      <div class="redes-sociais">
+        <button class="btn-rede whatsapp" (click)="abrirWhatsapp()">
+          <i class="fab fa-whatsapp"></i>
+        </button>
+        <button class="btn-rede instagram" (click)="abrirInstagram()">
+          <i class="fab fa-instagram"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
 </div>
