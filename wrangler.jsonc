@@ -1,9 +1,8 @@
 // wrangler.jsonc
 {
-  "name": "catalogo-estatico-simples", // Nome do seu projeto (pegue do WARNING no log)
-  "compatibility_date": "2025-10-25", // Use a data sugerida (ou a de hoje)
-  "main": "index.js", // É comum ter um 'dummy' main para assets estáticos
+  "name": "catalogo-estatico-simples", // O nome do seu site/Worker na Cloudflare
+  "compatibility_date": "2025-10-25", // A data de compatibilidade
   "site": {
-    "bucket": "./dist/catalogo-produtos-somente-front" // O diretório de build do seu Angular
+    "bucket": "./dist/catalogo-produtos-somente-front/browser" // O caminho ONDE estão seus arquivos (index.html, .js, .css, etc.)
   }
 }
