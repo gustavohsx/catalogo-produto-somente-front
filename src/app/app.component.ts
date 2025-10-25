@@ -136,7 +136,7 @@ export class AppComponent {
   ];
 
   comprarProduto(produto: ProdutoModel) {
-    const nomeTemp = encodeURI(produto.nome);
-    window.document.open(`https://wa.me/5582996839885?text=${nomeTemp}`);
+    const nomeTemp = encodeURIComponent(produto.nome);
+    window.open(`https://wa.me/558296293198?text=${nomeTemp}`, '_blank');
   }
 }
