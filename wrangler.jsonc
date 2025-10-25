@@ -1,0 +1,8 @@
+{
+  "name": "catalogo-estatico-simples", // Nome do seu projeto (pegue do WARNING no log)
+  "compatibility_date": "2025-10-25", // Use a data sugerida (ou a de hoje)
+  "main": "index.js", // É comum ter um 'dummy' main para assets estáticos
+  "site": {
+    "bucket": "./dist/catalogo-produtos-somente-front" // O diretório de build do seu Angular
+  }
+}
