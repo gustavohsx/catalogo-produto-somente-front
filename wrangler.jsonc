@@ -1,8 +1,0 @@
-// wrangler.jsonc
-{
-  "name": "catalogo-estatico-simples", // O nome do seu site/Worker na Cloudflare
-  "compatibility_date": "2025-10-25", // A data de compatibilidade
-  "site": {
-    "bucket": "./dist/catalogo-produtos-somente-front/browser" // O caminho ONDE estão seus arquivos (index.html, .js, .css, etc.)
-  }
-}
